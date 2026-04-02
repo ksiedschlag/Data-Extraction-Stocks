@@ -10,7 +10,7 @@ st.sidebar.header("User Input")
 ticker = st.sidebar.text_input("Enter Stock Ticker", "AAPL")
 start_date = st.sidebar.date_input("Start Date", pd.to_datetime("2023-01-01"))
 end_date = st.sidebar.date_input("End Date", pd.to_datetime("today"))
-if st.sidebar.buttom("Get Data"):
+if st.sidebar.button("Get Data"):
   stock = yf.Ticker(ticker)
   df = stock.history(start=start_date, end = end_date)
   if df.empty:
