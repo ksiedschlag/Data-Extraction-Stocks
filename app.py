@@ -1,7 +1,7 @@
 import streamlit as st
 import yfinance as yf
 import pandas as pd
-import matplot.lib.pyplot as plt
+import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Stock Data Extraction App",layout="wide")
 st.title("Stock Data Extraction App")
